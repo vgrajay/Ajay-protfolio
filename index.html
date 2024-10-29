@@ -19,22 +19,21 @@
 			<div id="wrapper">
 
 				<!-- Intro -->
-					<section class="intro">
-						<header>
-							<h1 class="h1">Ajay Vibhas V G R - Aspiring Software Developer</h1>
-							<p> <a href="https://instagram.com/vgrajay">@vgrajay</a> / <a href="https://github.com/vgrajay">github</a></p>
-							<ul class="actions">
-								<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
-							</ul>
-						</header>
-						<div class="content">
-							<span class="image fill" data-position="center">
-								<img src="images/gallery/vgrajay.png" style="width: 90%; height: 80%; padding: 150px; margin-left: 50px;" alt="Description of image" />
-							</span>
-							
-						</div>
-					</section>
-
+				<section class="intro">
+					<header>
+						<h1 class="h1">Ajay Vibhas V G R - Aspiring Software Developer</h1>
+						<p> <a href="https://instagram.com/vgrajay">@vgrajay</a> / <a href="https://github.com/vgrajay">github</a></p>
+						<ul class="actions">
+							<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
+						</ul>
+					</header>
+					<div class="content">
+						<span class="image fill" data-position="center">
+							<img src="images/gallery/vgrajay.png" alt="Description of image" class="responsive-image" />
+						</span>
+					</div>
+				</section>
+				
 				<!-- Section -->
 					<section id="first">
 						<header>
@@ -237,6 +236,32 @@
         }
 	.center-text {
     text-align: center;
+}
+
+.intro .content .image img {
+	width: 100%; /* Adjusts image width to container */
+	height: auto; /* Maintains aspect ratio */
+	padding: 20px; /* Adjust padding for a cleaner look */
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+/* For larger screens */
+@media (min-width: 768px) {
+	.intro .content .image img {
+		width: 90%; /* Adjust width on larger screens */
+		padding: 100px;
+		margin-left: 50px;
+	}
+}
+
+/* For smaller screens */
+@media (max-width: 767px) {
+	.intro .content .image img {
+		width: 100%; /* Full width for small screens */
+		padding: 10px;
+	}
 }
 
 </style>
